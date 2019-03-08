@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>ToDo list</title>
+	<style type="text/css">
+	h1
+	{
+		font-weight: bold;
+		margin-left: 50px;
+		margin-top: 50px;
+	}
+ul
+{
+	margin-left: 50px;
+}
+</style>
+<script type="text/javascript">
+  var todos=["Start making one"];
+ 
+
+window.setTimeout(function() {
+   var input=prompt("What would you like to do?");
+
+  
+while(input!=="quit")
+{
+	if(input==="list")
+  {
+  	console.log(todos);
+
+  }
+  else if(input==="new")
+  {
+   var newtodo=prompt("Enter new todo");
+   todos.push(newtodo);
+  }
+
+ var input=prompt("What would you like to do?");
+
+}
+console.log("Ok,you quit the app")
+
+
+}, 500);
+
+
+
+
+</script>
+</head>
+<body>
+<h1>ToDo List</h1>
+<ul  >
+
+<li><h2>"new"-Add A todo</h2></li>
+<li><h2>"list"-View all todo's</h2></li>
+<li><h2>"quit"-Quit App</h2></li>
+
+</ul>
+</body>
+</html>
